@@ -44,22 +44,25 @@ session to Muse. The rest depends on the hardware.
 | **M5Stack StickS3** | ESP32-S3 | 1.14" 135×240 LCD | 8 MB / 8 MB | [M5Stack docs](https://docs.m5stack.com/en/core/StickS3), [M5Unified](https://github.com/m5stack/M5Unified) | [M5Stack](https://shop.m5stack.com/products/m5sticks3-esp32s3-mini-iot-dev-kit) |
 | **M5Stack StopWatch** | ESP32-S3 | 1.75" 466×466 round AMOLED, touch | 16 MB / 8 MB | [M5Stack docs](https://docs.m5stack.com/en/core/StopWatch), [M5Unified](https://github.com/m5stack/M5Unified), [factory firmware](https://github.com/m5stack/M5StopWatch-UserDemo) | — |
 | **M5Stack StickC Plus2** | ESP32 | 1.14" 135×240 LCD | 8 MB / 2 MB | [M5Stack docs](https://docs.m5stack.com/en/core/M5StickC%20PLUS2), [M5Unified](https://github.com/m5stack/M5Unified) | [M5Stack](https://shop.m5stack.com/products/m5stickc-plus2-esp32-mini-iot-development-kit) (end of life) |
+| **PMSG (XIAO ESP32-C6)** | ESP32-C6 | None (4× WS2812 on D1) | 4 MB / none | [pmsg-xiao-esp32c6.md](pmsg-xiao-esp32c6.md), [pmsg.online](https://pmsg.online) | [PMSG](https://github.com/Control-C/PMSG) |
 
 ## Features
 
-| | DevKitC-1 | ideaspark | SenseCAP Indicator | reTerminal E1001 | HA Voice PE | Waveshare S3 1.75C | Waveshare S3 1.75 | AIPI Lite | Waveshare C6 1.8 | Watcher | StickS3 | StickC Plus2 | Cardputer ADV | BOX-3 | StopWatch |
-|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:| :-: | :-: |:-:|
-| Home-network tunnel | ✅ | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | — | ✅ | ✅ | ✅ | — | ✅ | ✅ |
-| Shows status on | Light | Screen | Screen | E-paper | Light ring | Avatar | Avatar | Avatar | Avatar | Avatar | Avatar | Avatar | Avatar | Avatar | Avatar |
-| Images from Muse | — | ✅ | ✅ | Black and white | — | ✅ | ✅ | ✅ | — | ✅ | ✅ | ✅ | — | ✅ | ✅ |
-| UI and settings | — | — | — | — | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Experimental | ✅ | ✅ |
-| Push-to-talk | — | — | — | — | ✅ | ✅ | ✅ | ✅ | Text replies | ✅ | ✅ | ✅ | Text replies (experimental) | ✅ | ✅ |
-| Speaker and mic | — | — | — | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Buzzer and mic | ES8311 (experimental) | ✅ | ✅ |
-| Air sensors | — | — | D1S, D1Pro | — | — | — | — | — | — | — | — | — | — | — | — |
-| Touch | — | — | — | — | — | ✅ | ✅ | — | ✅ | ✅ | — | — | — | ✅ | ✅ |
-| Battery status | — | — | — | — | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Voltage only | — | — | ✅ |
-| Over-the-air updates | Off | Off | Off | Off | Off | On | On | On | On | On | On | On | Off | On | On |
-| Buttons | BOOT | BOOT | Top | Green | Centre (talk), dial | PWR (talk), BOOT | BOOT (talk), PWR | Two | BOOT (talk), PWR | Wheel (press to talk, turn to sleep) | Front (talk), side (menu), PWR | Front (talk), side (menu), PWR | GO/Space (talk), Esc/Enter/arrows (menu) | BOOT/CONFIG (talk) | Yellow (talk), blue (sleep), PWR |
+| | DevKitC-1 | ideaspark | SenseCAP Indicator | reTerminal E1001 | HA Voice PE | Waveshare S3 1.75C | Waveshare S3 1.75 | AIPI Lite | Waveshare C6 1.8 | Watcher | StickS3 | StickC Plus2 | BOX-3 | StopWatch | PMSG |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Home-network tunnel | ✅ | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | — | ✅ | ✅ | ✅ | ✅ | ✅ | — |
+| Shows status on | Light | Screen | Screen | E-paper | Light ring | Avatar | Avatar | Avatar | Avatar | Avatar | Avatar | Avatar | Avatar | Avatar | 4-pixel bar |
+| Images from Muse | — | ✅ | ✅ | Black and white | — | ✅ | ✅ | ✅ | — | ✅ | ✅ | ✅ | ✅ | ✅ | — |
+| UI and settings | — | — | — | — | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | — |
+| Push-to-talk | — | — | — | — | ✅ | ✅ | ✅ | ✅ | Text replies | ✅ | ✅ | ✅ | ✅ | ✅ | — |
+| Speaker and mic | — | — | — | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Buzzer and mic | ✅ | ✅ | — |
+| Air sensors | — | — | D1S, D1Pro | — | — | — | — | — | — | — | — | — | — | — | Lux, UV |
+| Touch | — | — | — | — | — | ✅ | ✅ | — | ✅ | ✅ | — | — | ✅ | ✅ | — |
+| Battery status | — | — | — | — | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Voltage only | — | ✅ | Voltage only |
+| Over-the-air updates | Off | Off | Off | Off | Off | On | On | On | On | On | On | On | On | On | Off |
+| Buttons | BOOT | BOOT | Top | Green | Centre (talk), dial | PWR (talk), BOOT | BOOT (talk), PWR | Two | BOOT (talk), PWR | Wheel (press to talk, turn to sleep) | Front (talk), side (menu), PWR | Front (talk), side (menu), PWR | BOOT/CONFIG (talk) | Yellow (talk), blue (sleep), PWR | D9 (pair) |
+| BLE-PS | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 📵 📷 📸 🎤 |
+| Vibration | — | — | — | — | — | — | — | — | — | — | — | — | — | — | D10 |
 
 Boards without PSRAM (the ideaspark, Waveshare C6 and Cardputer ADV) don't have room for
 the home-network tunnel. Muse can still reach and control them once the
@@ -73,6 +76,9 @@ readings to the ESP32-S3. The D1S and D1Pro have CO2 and tVOC sensors built
 in, and temperature and humidity come from the Grove AHT20 in the box (plug it
 in). Muse reads them all at once with `sensors.read`. This needs Seeed's stock
 RP2040 firmware.
+
+PMSG is a glasses arm, not a devkit. A Seeed XIAO ESP32-C6 sits in the headers. Status is four WS2812 pixels on silk D1 (GPIO1), not a screen. The pairing button is silk D9 (GPIO20). The vibration motor is silk D10 (GPIO18, PWM). Lux, UV, and movement are on I²C: VEML7700 `0x10`, LTR390 `0x53`, LIS2DH12 `0x19`. No PSRAM, so the home-network tunnel stays off, same as the other C6 boards. Muse can still pair. Keep pixel brightness at or below 16. The bar sits next to the eye.
+BLE-PS or #BLeps rides on the same radio. It is a preference protocol, not a kill switch. A bystander advertises `📵` or `📵 DNR` (service data `0x20`). The glasses advertise `PMSG_📷` idle (`0x11`), `PMSG_📸` recording (`0x13`), or `PMSG_🎤` mic (`0x1C`). Never show 📷 and 📸 together. Workshop service `0000f1a0-0000-1000-8000-00805f9b34fb`. If 📵 is heard, the bar goes amber, D10 buzzes twice, and a new clip does not start. The Muse pair name stays `MuseGadget-PMSG-XXXXXX`. See [pmsg-ble-ps.md](pmsg-ble-ps.md) and the [PMSG spec](https://github.com/Control-C/PMSG/tree/main/BLE-bluetooth-privacy-signal).
 
 The reTerminal E1001's e-paper shows only black and white, 1 bit per pixel,
 and keeps its picture without power. It shows a still status screen (the
@@ -243,6 +249,7 @@ board's overlays, in order:
 | M5Stack StickS3 | `esp32s3` | [`devices/sdkconfig.muse`](sdkconfig.muse), [`devices/sdkconfig.muse-m5stack-sticks3`](sdkconfig.muse-m5stack-sticks3) | by hand |
 | M5Stack StopWatch | `esp32s3` | [`devices/sdkconfig.muse`](sdkconfig.muse), [`devices/sdkconfig.muse-m5stack-stopwatch`](sdkconfig.muse-m5stack-stopwatch) | by hand |
 | M5Stack StickC Plus2 | `esp32` | [`devices/sdkconfig.muse`](sdkconfig.muse), [`devices/sdkconfig.muse-m5stack-stickc-plus2`](sdkconfig.muse-m5stack-stickc-plus2) | by hand |
+| PMSG XIAO ESP32-C6 | `esp32c6` | [`devices/sdkconfig.pmsg-xiao-esp32c6`](sdkconfig.pmsg-xiao-esp32c6) | `idf.py -B build-pmsg-c6 -DIDF_TARGET=esp32c6 -DSDKCONFIG=build-pmsg-c6/sdkconfig -DSDKCONFIG_DEFAULTS="sdkconfig.defaults;devices/sdkconfig.pmsg-xiao-esp32c6" build` |
 
 `tools/board.sh BOARD [build|flash|monitor|flash-monitor] [PORT]` builds each
 board in its own `build-<board>` directory. For the boards with the full UI, run `idf.py`
