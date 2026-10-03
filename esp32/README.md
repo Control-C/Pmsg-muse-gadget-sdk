@@ -178,6 +178,7 @@ status screen.
 | M5Stack StickS3 | UI, push-to-talk, two-button menu, images | see [`AGENTS.md`](AGENTS.md#boards-with-the-full-ui-by-hand) |
 | M5Stack StopWatch | UI, push-to-talk, settings, images | see [`AGENTS.md`](AGENTS.md#boards-with-the-full-ui-by-hand) |
 | M5Stack StickC Plus2 | UI, push-to-talk, two-button menu, images | see [`AGENTS.md`](AGENTS.md#boards-with-the-full-ui-by-hand) |
+| PMSG (XIAO ESP32-C6) | 4-pixel status bar, pair button, vibration, lux / UV / movement. BLE-PS privacy marks. No screen. | `idf.py -B build-pmsg-c6 -DIDF_TARGET=esp32c6 -DSDKCONFIG_DEFAULTS="sdkconfig.defaults;devices/sdkconfig.pmsg-xiao-esp32c6" build` |
 
 See [`devices/`](devices) for each board's hardware, features, and where to
 buy one.
