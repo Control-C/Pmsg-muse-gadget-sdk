@@ -178,6 +178,7 @@ status screen.
 | M5Stack StickS3 | UI, push-to-talk, two-button menu, images | see [`AGENTS.md`](AGENTS.md#boards-with-the-full-ui-by-hand) |
 | M5Stack StopWatch | UI, push-to-talk, settings, images | see [`AGENTS.md`](AGENTS.md#boards-with-the-full-ui-by-hand) |
 | M5Stack StickC Plus2 | UI, push-to-talk, two-button menu, images | see [`AGENTS.md`](AGENTS.md#boards-with-the-full-ui-by-hand) |
+| PMSG (XIAO ESP32-C6) | ESP32-C6 | None (4× WS2812 on D1) | 4 MB / none | [pmsg-xiao-esp32c6.md](pmsg-xiao-esp32c6.md), [pmsg.online](https://pmsg.online) | [PMSG](https://github.com/Control-C/PMSG) |
 
 See [`devices/`](devices) for each board's hardware, features, and where to
 buy one.
@@ -190,6 +191,7 @@ Boards that support images can show pictures Muse sends them:
 Boards without PSRAM, like the classic ESP32 and the ESP32-C6, run without the
 home-network tunnel, which needs more memory than they have. Muse can still
 reach the device and control it.
+
 
 ## Hack and extend it
 
